@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentuçoTV • CFL Virtual</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --azul: #2c7be5;
+      --azul-escuro: #1e3a8a;
+      --amarelo: #facc15;
+      --preto: #0b0f19;
+      --branco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1e293b, #020617);
+      color: var(--branco);
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      backdrop-filter: blur(12px);
+      background: rgba(0,0,0,0.45);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 900;
+      font-size: 1.6rem;
+      color: var(--amarelo);
+      letter-spacing: 1px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 28px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #e5e7eb;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .menu a:hover {
+      color: var(--amarelo);
+    }
+
+    .btn-nav {
+      background: linear-gradient(135deg, var(--azul), var(--azul-escuro));
+      padding: 10px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 24px 40px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e') center/cover;
+      filter: blur(4px) brightness(0.35);
+      z-index: -1;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 900;
+      line-height: 1.1;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--amarelo), var(--azul));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: #cbd5f5;
+    }
+
+    .hero-buttons {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--amarelo), #fde047);
+      color: #000;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      border: 2px solid rgba(255,255,255,0.3);
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">DentuçoTV</div>
+    <nav class="menu">
+      <a href="#">Sobre</a>
+      <a href="#">Tecnologia</a>
+      <a href="#">Estatísticas</a>
+      <a href="#">Torneios</a>
+    </nav>
+    <a href="#" class="btn-nav">Dashboard</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>A MELHOR <span>TRANSMISSORA DO ROBLOX</span></h1>
+    <p>
+      Bem-vindo à DentuçoTV League. Organização profissional,
+      transmissões ao vivo e competições de alto nível no Roblox.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="https://discord.gg/5bWmP5DF" class="btn-primary" target="_blank">Junte-se à CFL</a>
+      <a href="https://discord.gg/gVjQYheqUJ" class="btn-secondary" target="_blank">Entre na Dentuço TV</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 DentuçoTV • Todos os direitos reservados
+</footer>
+
+</body>
+</html>
