@@ -1,0 +1,6 @@
+@bot.event
+async def on_ready():
+    bot.add_view(TicketPanel())
+    bot.add_view(FecharTicket())
+    await bot.tree.sync()
+    print(f"🤖 Bot online como {bot.user}")
